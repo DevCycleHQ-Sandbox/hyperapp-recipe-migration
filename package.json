@@ -1,0 +1,42 @@
+{
+  "name": "hyperapp-recipe-migration",
+  "version": "0.0.0",
+  "dependencies": {
+    "@devcycle/openfeature-web-provider": "^0.14.1",
+    "@openfeature/multi-provider-web": "^0.0.2",
+    "@openfeature/web-sdk": "^1.2.1",
+    "hyperapp": "^2.0.22"
+  },
+  "scripts": {
+    "start": "hyperapp-scripts start",
+    "build": "hyperapp-scripts build",
+    "test": "hyperapp-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "no-unused-vars": [
+        "warn",
+        {
+          "varsIgnorePattern": "^h$"
+        }
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "hyperapp-scripts": "^0.7.0"
+  }
+}
